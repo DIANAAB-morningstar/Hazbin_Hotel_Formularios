@@ -1,0 +1,168 @@
+body {
+  background-image: url('Fondos/Fondovintaje1.jpg'); /* Cambia el nombre si está en otro lugar */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  color: blanchedalmond
+}
+h1, h2 {
+  font-family: 'Calisto', cursive;
+}
+
+p, li {
+  font-family: 'Segoe UI', sans-serif;
+}
+.contenedor-principal {
+  max-width: 1000px; /* Puedes ajustarlo a 900px, 800px según prefieras */
+  margin: 0 auto; /* Centra el contenido */
+  padding: 20px; /* Espaciado interior */
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente (opcional para que resalte sobre tu imagen vintage) */
+  border-radius: 10px; /* Bordes redondeados opcionales */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Opcional: centra las imágenes */
+}
+.boton-redireccion{
+  background-color: #fd5e4b; 
+  color: blanchedalmond; 
+  padding: 10px 20px;
+  display: inline-block;
+  margin-top: 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.contenedorbotonred{
+    text-align: center;
+}
+.titulo-con-llamas {
+  text-align: center;
+  font-family: 'Century', cursive; /* Tipo gótico */
+  font-size: 36px;
+  color: #8B0000; /* Rojo oscuro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Espacio entre las llamas y el texto */
+  margin-top: 30px;
+}
+
+.llama {
+  font-size: 40px;
+  animation: flame-flicker 1s infinite alternate;
+}
+
+/* Animación opcional para que las llamas parpadeen */
+@keyframes flame-flicker {
+  0% { transform: scale(1); opacity: 0.9; }
+  100% { transform: scale(1.2); opacity: 1; }
+}
+.llama {
+  font-size: 40px;
+  animation: flame-flicker 1s infinite alternate;
+}
+
+@keyframes flame-flicker {
+  0% { transform: scale(1); opacity: 0.9; }
+  100% { transform: scale(1.2); opacity: 1; }
+}
+.Shipp {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: 15px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.Shipp img {
+  width: 200px;
+  height: auto;
+  transition: transform 0.3s ease;
+  display: block;
+  border-radius: 10px;
+}
+
+/* Agranda imagen al pasar el mouse */
+.Shipp:hover img {
+  transform: scale(1.1);
+}
+
+/* Texto emergente */
+.popup-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(30, 30, 30, 0.8);
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 8px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  width: 80%;
+  text-align: center;
+  font-size: 14px;
+  pointer-events: none;
+}
+
+/* Mostrar texto emergente al pasar el cursor */
+.Shipp:hover .popup-text {
+  opacity: 1;
+}
+.boton-votar {
+  display: block;
+  margin: 30px auto;
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #7a0e0e;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.boton-votar:hover {
+  background-color: #a31919;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-contenido {
+  background-color: rgb(218, 134, 83);
+  padding: 30px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  position: relative;
+}
+
+.cerrar {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #a00;
+  cursor: pointer;
+}
+
+.cerrar:hover {
+  color: #ff0000;
+}
